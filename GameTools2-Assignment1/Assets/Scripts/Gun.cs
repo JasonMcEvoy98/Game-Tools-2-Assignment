@@ -10,12 +10,12 @@ public class Gun : MonoBehaviour {
 
     private void OnEnable()
     {
-        m_character.OnFire.AddListener(Fire);
+       // m_character.OnFire.AddListener(Fire);
     }
 
     private void OnDisable()
     {
-        m_character.OnFire.RemoveListener(Fire);
+        //m_character.OnFire.RemoveListener(Fire);
     }
 
     private void Fire()
