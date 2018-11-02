@@ -44,8 +44,4 @@ public class UserControl : MonoBehaviour {
 
         m_character.AimFire(m_aimDown, m_aimHold, m_fire, m_deltaX);
     }
-
-   
-
-
 }
