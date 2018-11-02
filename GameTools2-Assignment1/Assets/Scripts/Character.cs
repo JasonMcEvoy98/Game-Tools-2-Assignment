@@ -58,14 +58,14 @@ public class Character : MonoBehaviour
     private void OnAnimatorIK(int layerIndex)
     {  if(m_enableIK)
         {
-            m_animator.SetIKPosition(AvatarIKGoal.RightHand, m_positionIK);
-            m_animator.SetIKPositionWeight(AvatarIKGoal.RightHand, m_weightIK);
+            m_animator.SetIKPosition(AvatarIKGoal . RightHand, m_positionIK);
+            m_animator.SetIKPositionWeight(AvatarIKGoal . RightHand, m_weightIK);
         }
 
         if(m_aim)
         {
-            Quaternion rotationOff = Quaternion.Euler(0, deltaX * 10, 0);
-            spineRotation = Quaternion.Lerp(spineRotation, spineRotation * rotationOff, Time.deltaTime * 50);
+            Quaternion rotationOff = Quaternion .Euler(0, deltaX * 10, 0);
+            spineRotation = Quaternion .Lerp(spineRotation, spineRotation * rotationOff, Time.deltaTime * 50);
             Vector3 spineRotationEuler = spineRotation.eulerAngles;
             if (spineRotationEuler.y > 180) spineRotationEuler.y = spineRotationEuler.y - 360;
             else if (spineRotationEuler.y < -180) spineRotationEuler.y = spineRotationEuler.y + 360;

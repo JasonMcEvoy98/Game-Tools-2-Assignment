@@ -34,14 +34,7 @@ public class UserControl : MonoBehaviour {
 
         m_aimDown = Input.GetMouseButtonDown(1);
         m_aimHold = Input.GetMouseButton(1);
-
-        m_fire = Input.GetMouseButtonDown(0);
-
-        m_deltaX = Input.GetAxis("Mouse X");
-
-
-        m_character.Move(m_turn, m_forward, m_jump, m_pick);
-
-        m_character.AimFire(m_aimDown, m_aimHold, m_fire, m_deltaX);
+         m_deltaX = Input.GetAxis("Mouse X"); m_character.Move(m_turn, m_forward, m_jump, m_pick);
+      
     }
 }
